@@ -1,0 +1,62 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/media-server-about-the-project">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article media-server-about-the-project  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('');}
+body > div.col-1:nth-of-type(2):after {background-image: url('');}</style><h1 id="Media-Server-About-the-Project">Media Server About the Project</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2010-04-12---media-20server">2010/04/12 - <a href="/category/media%20server">media%20server</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idI--Brian-Cullinan--began-creating-a-medi">I, Brian Cullinan, began creating a media distribution and access web application when I first started college in 2005.  I named it Media Server because that is exactly what is it meant to do; serve media.</p><h2 id="History-">History:</h2><p class="" id="idSince-the-project-first-began--it-has-be">Since the project first began, it has been completely re-written 4 times, including the current version.  The first version included a lot of functionality copied from Windows Media Player 9, including themes and basic library functionality.  Since then, features such as AJAX and Flexy (A smarty spinoff) have been a prominent influence in the design.</p><p class="" id="idThe-second-version-of-the-site-was-the-b">The second version of the site was the beginning of the modular design for the media server.  It included "modules" such as photo, video, and music.  Each module included an API for displaying a list of files, a main page, and functionality for displaying each type of media individually.</p><p class="" id="idThe-previous-version-of-the-media-site-w">The previous version of the media site was actually an extension of my main website, a simple CMS for abstracting the design and data.  The template system used is called Flexy.  It is kind of a simpler version of Smarty.  It abstracts the HTML out of the PHP code, but all the logic is still handled in PHP.  The media side of the website was also somewhat modular.  Each module was responsible for processing a request and outputting a list of files using a shared template system.</p><h2 id="This-version-">This version:</h2><p class="" id="idThis-version-was-started-early-2008---Th">This version was started early 2008.  The inspiration for this project was to create a more modular design, where plugins could be added and removed at any time, and still have a functional website.  VLC contibuted greatly to the motivation to create a new Media Server site.  All versions before this eventually reached their limitation in API and were abandoned.</p><p class="" id="idDesign-inspirations-came-primarily-from-">Design inspirations came primarily from the Virtual Worlds class, taught by Abe Pralle, here at NAU.  In this class I learned about Model/View/Controller, and realized that this design should be applied everywhere in Computer Science.  The Model is the data model for all the information that could possibly be needed on the website.  This data model is usually stored in a database and includes information, in this case, such as filenames, file sizes, or even artist and album information.  The View is the way the information is displayed to the user, or in the case of the media server, the template system.  Finally, the Controller is the way that users interact with the data and the view.</p><p class="" id="idI-decided-the-model-view-controller-desi">I decided the model/view/controller design was perfect for displaying media, and began production on my media website with that in mind.</p><h2 id="More-Credits-">More Credits:</h2><p class="" id="idAbe-Pralle--http---www-plasmaworks-com--">Abe Pralle (http://www.plasmaworks.com/), for educating all of us on the glory of model/view/controller design.</p><p class="" id="idMurphy-McCauley--http---www-constantthou">Murphy McCauley (http://www.constantthought.com/), for all his help with I/O streams in PHP, including setting up custom stream wrappers, and all the help debugging the VLC stream.</p><p class="" id="idTravis-Hudson--http---travishudson-wordp">Travis Hudson (http://travishudson.wordpress.com/), for his help debugging the media server on MAMP (Mac, Apache, MySQL, PHP).</p><p class="" id="idMichael-Brooks-----for-his-library-for-t">Michael Brooks (), for his library for translating using Google Translate.</p><p class="" id="idJoe-Flieger-----for-debugging-and-help-w">Joe Flieger (), for debugging and help with implementing News Groups and My Episodes.</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

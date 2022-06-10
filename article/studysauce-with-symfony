@@ -1,0 +1,69 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/studysauce-with-symfony">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article studysauce-with-symfony  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/Screen%20Shot%202017-03-23%20at%202.59.14%20PM-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/Screen%20Shot%202017-03-23%20at%202.59.14%20PM-final.jpg');}</style><h1 id="Studysauce-with-Symfony">Studysauce with Symfony</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2016-11-28---work">2016/11/28 - <a href="/category/work">work</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idFor-the-last-two-years--I-ve-been-writin">For the last two years, I've been writing PWAs in Symfony and iOS. The first year, we expanded on the study plan idea and built an entire course on studying. It had 15 lessons, each with a 4 minute video, and a short quiz. The student would earn rewards for each task they completed.</p><style>
+#id-Screen-20Shot-202017-03-23-20at-202-59-:before {background-image: url("/Screen Shot 2017-03-23 at 2.59.14 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202017-03-23-20at-202-59-"><img src="/Screen Shot 2017-03-23 at 2.59.14 PM-final.jpg" alt="Study sauce"></p><p class="" id="idWorking-with-Symfony-was-nice--But-one-o">Working with Symfony was nice. But one of the design bottlenecks I created was templates that were written in PHP but translated to Javascript. This made it difficult to debug.</p><style>
+#id-Screen-20Shot-202017-04-18-20at-208-37-:before {background-image: url("/Screen Shot 2017-04-18 at 8.37.52 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202017-04-18-20at-208-37-"><img src="/Screen Shot 2017-04-18 at 8.37.52 AM-final.jpg" alt="Symfony templates"></p><style>
+#id-Screen-20Shot-202017-04-18-20at-208-38-:before {background-image: url("/Screen Shot 2017-04-18 at 8.38.04 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202017-04-18-20at-208-38-"><img src="/Screen Shot 2017-04-18 at 8.38.04 AM-final.jpg" alt="Groups"></p><p class="" id="idThe-next-product-we-created-I-wrote-a-ba">The next product we created I wrote a backend in PHP, and a web and iOS native frontends.</p><style>
+#id-2016-01-06-study-png:before {background-image: url("/2016-01-06-study-final.jpg");}</style><p class="IMG" id="id-2016-01-06-study-png"><img src="/2016-01-06-study-final.jpg" alt="iOS app"></p><p class="" id="idAnother-bottleneck-was-a-polymorphic-res">Another bottleneck was a polymorphic restful ORM. I liken this sort of thing to oData, and I've written an entire post about it.</p><style>
+#id-Hateie-png:before {background-image: url("/Hateie-final.jpg");}</style><p class="IMG" id="id-Hateie-png"><img src="/Hateie-final.jpg" alt="No IE"></p><style>
+#id-Screen-20Shot-202017-04-18-20at-208-37-:before {background-image: url("/Screen Shot 2017-04-18 at 8.37.28 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202017-04-18-20at-208-37-"><img src="/Screen Shot 2017-04-18 at 8.37.28 AM-final.jpg" alt="Store"></p><p class="" id="idI-think-part-of-the-complexity-and-dragg">I think part of the complexity and dragging part of this project was building administration interfaces, when we could have used a cloud provider like Google.</p><style>
+#id-2015-09-03-png:before {background-image: url("/2015-09-03-final.jpg");}</style><p class="IMG" id="id-2015-09-03-png"><img src="/2015-09-03-final.jpg" alt="History"></p><p class="" id="idOur-plan-was-to-sell-B2B-to-schools-as-a">Our plan was to sell B2B to schools as a package deal, sign up a bunch of students to use the app and supplement the memorization part of studying. Then use the scores we collected as feedback for the teacher. Something tells me schools don't have much extra budget for this kind of stuff.</p><p class="A" id="idPitch-deck"><a href="https://blog.briancullinan.com/20140109%20Study%20Sauce%20pitch%20deck.pptx">Pitch deck</a></p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

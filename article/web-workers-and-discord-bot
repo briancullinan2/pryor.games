@@ -1,0 +1,72 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/web-workers-and-discord-bot">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article web-workers-and-discord-bot  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/Screen%20Shot%202020-04-24%20at%202.16.52%20PM-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/Screen%20Shot%202020-04-24%20at%202.16.52%20PM-final.jpg');}</style><h1 id="Web-workers-and-discord-bot">Web workers and discord bot</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2020-06-26---games">2020/06/26 - <a href="/category/games">games</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="CODE" id="idI-ve-been-trying-to-improve-the-performa">I’ve been trying to improve the performance of this engine. It does a few things that I couldn’t stand for anymore. It restarts the file system too many times when starting a server. That was a pretty easy fix to comment out a few lines pointing to <code>FS_Restart()</code>. The engine also restarts the renderer a few times. This is because while games are loading, shaders could be inserted that might allow the player to wallhack. I’ll just comment this out for now, so the renderer only starts once, and then add an in memory check for shader names, for security, later.</p><style>
+#id-Screen-20Shot-202020-04-24-20at-206-09-:before {background-image: url("/Screen Shot 2020-04-24 at 6.09.40 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-04-24-20at-206-09-"><img src="/Screen Shot 2020-04-24 at 6.09.40 PM-final.jpg" alt="Working team arena"></p><style>
+#id-Screen-20Shot-202020-03-19-20at-201-49-:before {background-image: url("/Screen Shot 2020-03-19 at 1.49.47 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-03-19-20at-201-49-"><img src="/Screen Shot 2020-03-19 at 1.49.47 PM-final.jpg" alt="Working urban terror"></p><style>
+#id-Screen-20Shot-202020-05-22-20at-2010-59:before {background-image: url("/Screen Shot 2020-05-22 at 10.59.41 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-05-22-20at-2010-59"><img src="/Screen Shot 2020-05-22 at 10.59.41 AM-final.jpg" alt="Working urban terror"></p><p class="A" id="idI-ve-made-various-bug-fixes--A-few-keys-">I’ve made various bug fixes. A few keys weren’t registering. Sound starts the first time the user clicks on the page. I added Offline mode!  This is great, now if you visit the page <a href="https://quake.games">quake.games</a> at least once, all the content you need to run the game will be cached and you can use the same page offline. Just visit quake.games in offline mode, or airplane mode and it will load the previously downloaded version. This is very similar to an instant app if you save a shortcut on your homescreen.</p><style>
+#id-Screen-20Shot-202020-05-25-20at-2012-55:before {background-image: url("/Screen Shot 2020-05-25 at 12.55.06 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-05-25-20at-2012-55"><img src="/Screen Shot 2020-05-25 at 12.55.06 PM-final.jpg" alt="Performance testing"></p><style>
+#id-Screen-20Shot-202020-05-25-20at-2012-59:before {background-image: url("/Screen Shot 2020-05-25 at 12.59.54 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-05-25-20at-2012-59"><img src="/Screen Shot 2020-05-25 at 12.59.54 PM-final.jpg" alt="Slow house"></p><style>
+#id-Screen-20Shot-202020-05-24-20at-2010-58:before {background-image: url("/Screen Shot 2020-05-24 at 10.58.28 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-05-24-20at-2010-58"><img src="/Screen Shot 2020-05-24 at 10.58.28 AM-final.jpg" alt="Slow house 2"></p><p class="CODE" id="idI-had-to-reorganize-a-bunch-of-file-syst">I had to reorganize a bunch of file system code to get web-workers to work with Emscripten. That was a huge pain. Emscripten isn’t hugely intuitive and I am considering removing it and just keeping a few system calls that the game needs. I moved the local server into a web-worker. Part of the motivation for this was to reduce the CPU usage on the main thread, by about 15%. So when you start a local game, you are actually connecting to a web-worker with <code>set dedicated 1</code>. This is great because I can use the local server to do things like instant replays, and set up some kind of synchronization between multiple remote servers. I could seamlessly transition between a live multiplayer game and a demo.</p><style>
+#id-Screen-20Shot-202020-05-17-20at-203-44-:before {background-image: url("/Screen Shot 2020-05-17 at 3.44.35 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-05-17-20at-203-44-"><img src="/Screen Shot 2020-05-17 at 3.44.35 PM-final.jpg" alt="Wolf ET map"></p><style>
+#id-Screen-20Shot-202020-05-14-20at-202-39-:before {background-image: url("/Screen Shot 2020-05-14 at 2.39.58 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-05-14-20at-202-39-"><img src="/Screen Shot 2020-05-14 at 2.39.58 PM-final.jpg" alt="Fast house"></p><p class="CODE CODE CODE" id="idI-ve-had-the-opportunity-to-explore-the-">I’ve had the opportunity to explore the Discord API. Now, someone can launch a new match using a Discord Bot. All they have to write is <code>challenge @megamind</code>, and use a mention for any users. The bot then waits for a <code>:thumbsup:</code> reaction and launches a new server. It actually selects an empty server from a pool of servers waiting around, but I plan to reduce the idling even more by launching servers using a proxy service. It would be pretty easy for someone to donate an empty server, all they have to do is <code>+set sv_master1 207.246.91.235</code> and it will show up in the pool if there is no one connected.</p><style>
+#id-Screen-20Shot-202020-06-26-20at-208-36-:before {background-image: url("/Screen Shot 2020-06-26 at 8.36.21 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-06-26-20at-208-36-"><img src="/Screen Shot 2020-06-26 at 8.36.21 PM-final.jpg" alt="Discord bot"></p><style>
+#id-Screen-20Shot-202020-07-30-20at-208-34-:before {background-image: url("/Screen Shot 2020-07-30 at 8.34.02 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-07-30-20at-208-34-"><img src="/Screen Shot 2020-07-30 at 8.34.02 PM-final.jpg" alt="Discord bot 2"></p><p class="CODE" id="idI-got-this-Huffman-decoder-working--but-">I got this Huffman decoder working, but I am not sure it is being used by the server, so I took it out. My next coding adventure will be continuing to hack on this web-worker net-separated server code. I would like to pull in this multi-view code from Cyrax, and combine it with my previous multi-world work. Then I would like to divide up a <code>.BSP</code> map into sections, and have a client switch instantaneously. The server could tell the client which part of the map to load first, spawn the player, then load the rest of the map in a worker or background thread. Unfortunately, there will still be frame drops because OpenGL web workers are only supported in Chrome.  But I hope by splitting up maps into smaller pieces, it will not be very noticeable.</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

@@ -1,0 +1,31 @@
+{
+  "title": "2016-01-04.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1451930530",
+    "formatted": "Jan 4, 2016, 6:02:10 PM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1472951277",
+    "formatted": "Sep 4, 2016, 1:07:57 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1451930530",
+    "formatted": "Jan 4, 2016, 6:02:10 PM UTC"
+  }
+}

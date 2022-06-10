@@ -1,0 +1,679 @@
+*,
+:before,
+:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Droid Sans', 'Google Sans Display', -apple-system, BlinkMacSystemFont, sans-serif, 'Open Sans', Arial, Helvetica;
+    font-size: large;
+    color: #334;
+}
+
+body {
+    margin: 60px auto;
+    width: 21cm;
+    height: 29.7cm;
+    /* change the margins as you want them to be. */
+    background: #334;
+}
+
+body.dark {
+    background: #000;
+}
+
+body.dark,
+body.dark input,
+body.dark textarea,
+body.dark button {
+    color: #eee;
+}
+
+body>div:nth-of-type(1) {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body>div {
+    padding: 27mm 16mm;
+    background: #EEE;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, .5);
+    margin: 20px 0;
+    border-radius: 2px;
+    border: 1px solid #333;
+}
+
+body.dark>div {
+    background: #334;
+    box-shadow: 2px 3px 10px rgba(255, 255, 255, .5);
+    border-color: #EEE;
+}
+
+.section-contact>.col-2,
+body>.col-2,
+body>.col-3,
+body>.col-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+}
+
+.section-contact>.col-2>*,
+body>.col-2>* {
+    flex-basis: 50%;
+}
+
+body>.col-3>* {
+    flex-basis: 33.33%;
+}
+
+body>.col-4>* {
+    flex-basis: 25%;
+}
+
+body>div:nth-of-type(2) .cell-1 {
+    flex-basis: 100px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+a[onclick*="showMore"] {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background: #DDD;
+    z-index: 899;
+}
+
+body.dark a[onclick*="showMore"] {
+    background: #445;
+}
+
+a[onclick*="showMore"]:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 100%;
+    top: auto;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(238, 238, 238, 0) 0%,
+        rgba(238, 238, 238, 1) 100%);
+}
+
+body.dark a[onclick*="showMore"]:before {
+    background-image: linear-gradient(rgba(51, 51, 68, 0) 0%,
+        rgba(51, 51, 68, 1) 100%);
+}
+
+.more *[class*="section-"]:not(.more) .more a[onclick*="showMore"]:after,
+.more a[onclick*="showMore"]:after {
+    content: "/less";
+}
+
+.more *[class*="section-"]:not(.more) a[onclick*="showMore"]:after {
+    content: unset;
+}
+
+.more *[class*="section-"]:not(.more) a[onclick*="showMore"]:before {
+    display: block;
+}
+
+.more *[class*="section-"]:not(.more) .more a[onclick*="showMore"]:before,
+.more a[onclick*="showMore"]:before {
+    display: none;
+}
+
+span.tooltip {
+    display: inline-block;
+    opacity: 0;
+    position: relative;
+    left: 0;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    width: auto;
+    max-width: 100%;
+    border: 2px solid #334;
+    background: #DDD;
+    padding: 5px;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+body.dark span.tooltip {
+    background: #334;
+    border-color: #DDD;
+}
+
+span.tooltip:before {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #334;
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 100%;
+    top: auto;
+    right: auto;
+    margin-left: -5px;
+    margin-bottom: 2px;
+}
+
+body.dark span.tooltip:before {
+    border-bottom-color: #DDD;
+}
+
+span.tooltip:hover,
+*:hover+p>span.tooltip,
+*:hover+span.tooltip,
+*:hover>span.tooltip {
+    opacity: 1;
+}
+
+#background {
+    transform: skewX(30deg) rotate(-15deg) scale(2);
+    position: absolute;
+    top: -100px;
+    left: -200px;
+    font-size: 6px;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    z-index: -1;
+    overflow-wrap: break-word;
+    width: 200%;
+    background: linear-gradient(to right, #b21f1f 0%, #fdbb2d 33%, #30CFD0 66%, #330867 100%);
+    filter: blur(0.5px);
+}
+
+body>div:nth-of-type(2) {
+    position: relative;
+    overflow: hidden;
+    background: rgba(238, 238, 238, .8);
+}
+
+body.dark>div:nth-of-type(2) {
+    background: rgba(51, 51, 68, .9);
+}
+
+#background br {
+    display: none;
+}
+
+.section-employers .cell-0>div {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 140px;
+    position: relative;
+}
+
+.section-employers .cell-0>div>h3,
+.section-employers .cell-0>div>h4 {
+    flex-basis: 100%;
+}
+
+.section-employers .cell-0>div>* {
+    flex-basis: 50%;
+}
+
+.section-employers .cell-0>div>span:last-of-type {
+    text-align: right;
+}
+
+.section-employers img {
+    max-height: 120px;
+    max-width: 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section-employment,
+.section-education,
+.section-courses>div:nth-of-type(2) .cell-0 {
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 1s ease-in-out;
+}
+
+.section-courses.more>div:nth-of-type(2) .cell-0,
+.section-employment.more,
+.section-education.more {
+    max-height: max-content;
+}
+
+.section-employment,
+.section-courses,
+.section-education {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+body>div:nth-of-type(2) .cell-0 {
+    flex-grow: 1;
+}
+
+.section-education>* {
+    display: none;
+}
+
+.section-education.more>*,
+.section-education>*:nth-of-type(1),
+.section-education>*:nth-of-type(2) {
+    display: unset;
+}
+
+.section-education>.col-2 {
+    display: flex;
+}
+
+.section-education>.col-2>* {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+body>div:nth-of-type(2) .cell-0,
+.section-contact>.col-2>*:first-of-type,
+.section-education>.col-2>*:first-of-type {
+    padding-right: 15px;
+}
+
+body>div:nth-of-type(2) .cell-1,
+.section-contact>.col-2>*:last-of-type,
+.section-education>.col-2>*:last-of-type {
+    padding-left: 15px;
+}
+
+.section-terms {
+    position: relative;
+}
+
+.section-courses>div:nth-of-type(2) .cell-0>div,
+.section-subjects>div:nth-of-type(2) .cell-0>div,
+.section-terms>div:nth-of-type(2) .cell-0>div {
+    display: flex;
+}
+
+.section-courses>div:nth-of-type(2) .cell-0>div>* {
+    flex-basis: 33.33%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.section-courses>div:nth-of-type(2) .cell-0>div>*:last-of-type,
+.section-subjects>div:nth-of-type(2) .cell-0>div>*:last-of-type,
+.section-terms>div:nth-of-type(2) .cell-0>div>*:last-of-type {
+    flex-basis: 50px;
+    text-align: right;
+}
+
+.section-subjects>div:nth-of-type(2) .cell-0>div>*,
+.section-terms>div:nth-of-type(2) .cell-0>div>* {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+iframe,
+img {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, .8);
+    z-index: 900;
+}
+
+header a[href*="/"] {
+    width: 60px;
+    display: inline-block;
+}
+
+a {
+    color: #666666;
+    transition: .15s ease-in-out;
+}
+
+body.dark a {
+    color: #AAA;
+}
+
+a:hover {
+    color: #000000;
+    text-shadow: 0 2px 3px rgba(255, 255, 255, .5);
+}
+
+body.dark a:hover {
+    color: #FFF;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+}
+
+h1:before,
+h2:before {
+    width: 200%;
+    content: " ";
+    display: block;
+    margin-top: -70px;
+    padding-top: 70px;
+}
+
+nav>a+div a,
+button,
+input[type="submit"],
+input[type="button"],
+h2 a[href] {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 2px;
+    transition: .15s ease-in-out;
+    width: auto;
+    font-size: large;
+    color: #666666;
+    margin: 20px auto;
+    cursor: pointer;
+    outline: none;
+    height: auto;
+}
+
+body.dark button,
+body.dark input[type="submit"],
+body.dark input[type="button"],
+body.dark h2 a[href] {
+    color: #AAA;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+nav>a+div a:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+h2 a[href]:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: #333333;
+}
+
+body.dark button:hover,
+body.dark input[type="submit"]:hover,
+body.dark input[type="button"]:hover,
+body.dark h2 a[href]:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #DDD;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: auto;
+    z-index: 901;
+    padding: 0 20px;
+}
+
+
+nav>a {
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    transition: .15s ease-in-out;
+}
+
+nav>a:hover {
+    background: rgba(0, 0, 0, .2);
+    color: #EEEEEE;
+}
+
+nav>a+div {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 2px;
+    width: 400px;
+    padding: 20px;
+    color: white;
+}
+
+nav>a+div p:last-of-type {
+    text-align: center;
+}
+
+nav>a+div img {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin: 20px;
+}
+
+nav>a:hover+div,
+nav>a+div:hover {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form>* {
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 10px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    position: relative;
+    border: 2px solid transparent;
+    highlight: none;
+    height: 45px;
+    z-index: 1;
+}
+
+body.dark input,
+body.dark textarea {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+label:after {
+    content: " ";
+    display: block;
+    width: auto;
+    height: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 50%;
+    right: 50%;
+    visibility: hidden;
+    transition: ease-in-out .15s;
+    transition-property: left, right, bottom;
+    z-index: 2;
+}
+
+body.dark label:after {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input:focus+label:after,
+textarea:focus+label:after,
+input:valid+label:after,
+textarea:valid+label:after {
+    visibility: visible;
+    left: 2px;
+    right: 2px;
+    bottom: -35px;
+}
+
+label {
+    padding: 15px;
+    font-size: medium;
+    position: relative;
+    top: -45px;
+    transition: ease-in-out .15s;
+    pointer-events: none;
+    z-index: 0;
+    height: 45px;
+    white-space: nowrap;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+input:focus+label,
+textarea:focus+label,
+input:valid+label,
+textarea:valid+label {
+    top: -80px;
+    font-size: small;
+}
+
+.pieContainer {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    margin: auto;
+    color: white;
+}
+
+.pieBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pie {
+    transition: all 1s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    clip: rect(0px, 300px, 600px, 0px);
+    overflow: hidden;
+}
+
+.hold {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    clip: rect(0px, 600px, 600px, 300px);
+    overflow: hidden;
+}
+
+.hold span {
+    position: absolute;
+    left: 50%;
+    z-index: 100;
+    text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+.innerCircle {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background-color: #444;
+    border-radius: 100%;
+    top: 12.5%;
+    left: 12.5%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5) inset;
+}
+
+.innerCircle .content {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 30px;
+    left: 0;
+    text-align: center;
+}
+
+@media all and (max-width: 1000px) {
+
+    body.resume nav>a:nth-of-type(5),
+    body.resume nav>a:nth-of-type(7),
+    body.app nav>a:nth-of-type(5),
+    body.app nav>a:nth-of-type(7) {
+        display: none;
+    }
+}
+
+@media all and (max-width: 900px) {
+
+    body.app,
+    body.resume {
+        padding: 20px auto;
+        width: auto;
+    }
+}
+
+@media all and (max-width: 800px) {
+
+    body.resume nav>a:nth-of-type(4),
+    body.resume nav>a:nth-of-type(6),
+    body.app nav>a:nth-of-type(4),
+    body.app nav>a:nth-of-type(6) {
+        display: none;
+    }
+
+    body.resume>div,
+    body.app>div {
+        padding: 20px;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    body.resume nav>a:nth-of-type(1),
+    body.resume nav>a:nth-of-type(3),
+    body.resume nav>a:nth-of-type(8),
+    body.app nav>a:nth-of-type(1),
+    body.app nav>a:nth-of-type(3),
+    body.app nav>a:nth-of-type(8) {
+        display: none;
+    }
+
+    nav>a {
+        padding: 10px;
+    }
+}

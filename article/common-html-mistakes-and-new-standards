@@ -1,0 +1,71 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/common-html-mistakes-and-new-standards">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article common-html-mistakes-and-new-standards  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/blog-post-template-Copy-2-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/blog-post-template-Copy-2-final.jpg');}</style><h1 id="Common-HTML-mistakes-and-new-standards">Common HTML mistakes and new standards</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2008-03-07---bugs">2008/03/07 - <a href="/category/bugs">bugs</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><h2 id="March-7th-2008">March 7th 2008</h2><p class="" id="idAmong-the-vast-array-of-websites-on-the-">Among the vast array of websites on the internet, there are far too few that stand out in the efforts to be xHTML compliant. I am constantly disappointed when I find my favorite websites like slashdot.org don't quite make par when it comes to well-formed HTML. So here are a few tips to consider when designing your HTML document:</p><p class="" id="id-----ampersand">&amp; &lt;- ampersand</p><p class="" id="idThe-most-common-mistake-I-see-involves-t">The most common mistake I see involves the ampersand. Always replace the ampersand with the HTML escape code. THIS INCLUDES IN THE href OF HYPERLINKS!!!!111one HTML can be considered a subset of XML, and XML has some basic requirements such as every start tag must have an end tag. The most common mistakes I see here are on image, input, and break tags. All these elements should end with /&gt;. The backslash closes the element. Here are a few examples of proper syntax:</p><pre><code></code></pre><img src="“image-final.jpg" alt="“example”"> <br> <input type="“text”" value="“”">
+```
+
+Another problem that also occurs a lot is putting javascripts in the body of a page. There is never a need for this. Javascript code can always be abstracted away and the processing function should be placed in a <script><p class="" id="idin-the--tag--or-in-a-separate-file--Howe">in the  tag, or in a separate file. However, if you absolutely insist on putting javascript in the middle of your page, you can pass xHTML tests with the following technique:</p><pre><code>&lt;script … &gt; //&lt;!— …. Code… //--&gt; </code></pre></script>
+```
+
+This causes the validator to think that the script code is just one big comment tag and it is not parsed. Come on you, you know you want to click it: This is a valid xHTML site I hope you can all go forth and be better xHTML writers!
+
+
+</div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

@@ -1,0 +1,66 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/medical-device-manufacturing">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article medical-device-manufacturing  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/epic-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/epic-final.jpg');}</style><h1 id="Medical-device-manufacturing">Medical device manufacturing</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2013-04-01---work">2013/04/01 - <a href="/category/work">work</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idEnd-of-an-age-in-device-manufacturing--S">End of an age in device manufacturing. Since the company was dismantled and sold, I doubt anyone will have a problem with any possibility of revealing trade secrets here.</p><p class="" id="idSince-early-2011--I-have-been-working-on">Since early 2011, I have been working on a medical device that will diagnose a person's organ health based on Kirlian imaging of a fingertips. This company was heavy on the promise side of the business, and not at all caring of the technology side. I worked for months updating the entire technology/software stack, all to have it dismantled and lost to propriety.</p><style>
+#id:before {background-image: url("-final.jpg");}</style><p class="IMG" id="id"><img src="" alt="Clearview"></p><style>
+#id-Link-to-whitepaper:before {background-image: url("/363314-1426559982700-final.jpg");}</style><p class="IMG BR A" id="id-Link-to-whitepaper"><img src="/363314-1426559982700-final.jpg" alt="Landing page"><br>
+<a href="https://www.sciencedirect.com/science/article/pii/S221323171530015X">Link to whitepaper</a></p><p class="" id="idA-scan-from-this-platform-use-to-take-10">A scan from this platform use to take 10 minutes to process, until I came along and rewrote it using Windows Presentation Foundation and multithreading, it takes under 1 second to process all finger images.</p><style>
+#id-fx1-jpg:before {background-image: url("/fx1-final.jpg");}</style><p class="IMG" id="id-fx1-jpg"><img src="/fx1-final.jpg" alt="Clearview finger"></p><p class="" id="idWe-build-an-entire-cloud-based-service--">We build an entire cloud based service, perfect for running on Azure. It indicated when a patient scan was happening. It had 2-way synching of imaging data for cloud processing. It would allow doctors at home to review a scan from a patient in a remote office.</p><p class="" id="idEPIC-Central-cloud">EPIC Central cloud</p><p class="" id="idI-wrote-a-polymorphic-searching-algorith">I wrote a polymorphic searching algorithm that I've blogged abount separately. This allowed the use to search a date range, or patient name, all from one combined search field.</p><p class="" id="idSearch-algorithm">Search algorithm</p><p class="" id="idUltimately--we-were-burdened-by-a-change">Ultimately, we were burdened by a change control process that was too much work for such a small company. They brought it contractors to clean up the work we had done for the last 3 years and me and the other engineers were let go. Working here actually reminded me a lot of the movie "The Founder" the documentary of Elizabeth Holme's fraud in medical device manufacturing.</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

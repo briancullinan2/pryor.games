@@ -1,0 +1,69 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/drupals-downside">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article drupals-downside  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/highlights_drupal-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/highlights_drupal-final.jpg');}</style><h1 id="Drupals-downside">Drupals downside</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2014-08-20---web">2014/08/20 - <a href="/category/web">web</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idThis-marks-the-end-of-my-use-of-drupal--">This marks the end of my use of drupal. I enjoyed it for years, but arbitrary API changes, multiple UIs, impossible configuration complexity makes it hard to evolve a platform over time.</p><style>
+#id-studysauce-drupal-3-png:before {background-image: url("/studysauce-drupal-3-final.jpg");}</style><p class="IMG" id="id-studysauce-drupal-3-png"><img src="/studysauce-drupal-3-final.jpg" alt="Study Sauce landing"></p><p class="" id="idThe-weirdest-problem-I-had-with-drupal-i">The weirdest problem I had with drupal is creating interfaces. I used various forms modules and it even supported repeatable fields of multiple fields. It started to get weird when I needed to add or remove fields, I felt like I was constantly redoing work.</p><style>
+#id-studysauce-drupal-png:before {background-image: url("/studysauce-drupal-final.jpg");}</style><p class="IMG" id="id-studysauce-drupal-png"><img src="/studysauce-drupal-final.jpg" alt="Study Sauce fields"></p><style>
+#id-studysauce-drupal-2-png:before {background-image: url("/studysauce-drupal-2-final.jpg");}</style><p class="IMG" id="id-studysauce-drupal-2-png"><img src="/studysauce-drupal-2-final.jpg" alt="Repeating fields"></p><p class="" id="idBetween-trying-to-manipulate-forms-in-to">Between trying to manipulate forms in to a web-app, I had to use the Drupal CLI for database backups, and security upgrades. There were various configuration panels for templates and modules that I had to click through. It was weird not being able to control the entire platform using only code. Sure, my module could install configurations, Drupal has great features for that.</p><p class="" id="idDrupal-versions">Drupal versions</p><p class="" id="idI-wrote-a-small-SPA-for-a-company-that-m">I wrote a small SPA for a company that made a Java app that links words together to help kids with dislexia read.</p><style>
+#id-reading-fox-png:before {background-image: url("/reading-fox-final.jpg");}</style><p class="IMG" id="id-reading-fox-png"><img src="/reading-fox-final.jpg" alt="Reading fox"></p><p class="" id="idThis-app-was-a-basic-landing-page-with-a">This app was a basic landing page with a tile design for my wife's artwork.</p><style>
+#id-vip-drupal-png:before {background-image: url("/vip-drupal-final.jpg");}</style><p class="IMG" id="id-vip-drupal-png"><img src="/vip-drupal-final.jpg" alt="VIP"></p><p class="" id="idI-made-this-neat-CV-that-reformats-color">I made this neat CV that reformats colors when you try to print it.</p><style>
+#id-resume-drupal-2-png:before {background-image: url("/resume-drupal-2-final.jpg");}</style><p class="IMG" id="id-resume-drupal-2-png"><img src="/resume-drupal-2-final.jpg" alt="Drupal resume"></p><style>
+#id-resume-drupal-png:before {background-image: url("/resume-drupal-final.jpg");}</style><p class="IMG" id="id-resume-drupal-png"><img src="/resume-drupal-final.jpg" alt="Drupal print"></p><p class="" id="idSo-what-is-next--I-realized-Symfony-was-">So what is next? I realized Symfony was included as a module for Drupal, so I switch to the Symfony framework. It is MVC based, as opposed to Drupal hook system.</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

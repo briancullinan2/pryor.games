@@ -1,0 +1,31 @@
+{
+  "title": "IMG_20160819_102955.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1472793520",
+    "formatted": "Sep 2, 2016, 5:18:40 AM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1574086545",
+    "formatted": "Nov 18, 2019, 2:15:45 PM UTC"
+  },
+  "geoData": {
+    "latitude": 33.634766666666664,
+    "longitude": -111.93002777777778,
+    "altitude": 426.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 33.634766666666664,
+    "longitude": -111.93002777777778,
+    "altitude": 426.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1471627797",
+    "formatted": "Aug 19, 2016, 5:29:57 PM UTC"
+  }
+}

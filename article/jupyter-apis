@@ -1,0 +1,67 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/jupyter-apis">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article jupyter-apis  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/main-logo-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/main-logo-final.jpg');}</style><h1 id="Jupyter-APIs">Jupyter APIs</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2017-04-18---projects">2017/04/18 - <a href="/category/projects">projects</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idI-read-this-blog-article-from-an-enginee">I read this blog article from an engineer at IBM that exposes his jupyter cells as rest API endpoints. I've adapted this to my own collection of NodeJS notebooks. I can run cells as individual functions or upload a collection of functions as more of a monolithic service.</p><style>
+#id-Screen-20Shot-202017-12-28-20at-209-51-:before {background-image: url("/Screen Shot 2017-12-28 at 9.51.30 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202017-12-28-20at-209-51-"><img src="/Screen Shot 2017-12-28 at 9.51.30 PM-final.jpg" alt="Megamind screenshot"></p><style>
+#id-8199482268254652774-account-id-1-png:before {background-image: url("/8199482268254652774_account_id=1-final.jpg");}</style><p class="IMG" id="id-8199482268254652774-account-id-1-png"><img src="/8199482268254652774_account_id=1-final.jpg" alt="Megamind mobile"></p><style>
+#id-Screen-20Shot-202017-10-04-20at-2010-17:before {background-image: url("/Screen Shot 2017-10-04 at 10.17.35 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202017-10-04-20at-2010-17"><img src="/Screen Shot 2017-10-04 at 10.17.35 PM-final.jpg" alt="Github tips"></p><style>
+#id-Screen-20Shot-202017-07-21-20at-206-51-:before {background-image: url("/Screen Shot 2017-07-21 at 6.51.37 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202017-07-21-20at-206-51-"><img src="/Screen Shot 2017-07-21 at 6.51.37 PM-final.jpg" alt="Framework wordcloud"></p><p class="" id="idRecently--I-ve-been-enjoying-the-idea-of">Recently, I've been enjoying the idea of picking out one cool feature from a project, and only reimplementing that single feature. For example, I read Fuse.js search uses levenstien, so I made a simple mockup of a search algorithm using another levenschtein implementation I found online. This is a lot like the search algorithm code I blogged about earlier.</p><p class="" id="idlevSearch-code">levSearch code</p><p class="" id="idNow--any-function-in-the-collection-of-n">Now, any function in the collection of notebooks can be accessed remotely by name, or by the markup that comes before it. I could even execute test cells to turn features on and off automatically based on the code that is available. Why not inject apps directly in to the output of a notebook?</p><style>
+#id-Screen-20Shot-202017-08-04-20at-2011-34:before {background-image: url("/Screen Shot 2017-08-04 at 11.34.31 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202017-08-04-20at-2011-34"><img src="/Screen Shot 2017-08-04 at 11.34.31 PM-final.jpg" alt="App chunking"></p><p class="" id="idDocumentation-RPC-screenshot">Documentation RPC screenshot</p><p class="" id="idThe-screenshot-above-is-another-example-">The screenshot above is another example of a simple proof-of-concept project. I like the idea of automatically generating documentation, so I created a simple template and I give it a Github repository and it generates documentation for every API call.</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

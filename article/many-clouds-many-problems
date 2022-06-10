@@ -1,0 +1,65 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/simple_cc_logo_3.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/many-clouds-many-problems">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" media="screen" href="/bjcullinan-style.css">
+</head>
+<body class="article many-clouds-many-problems  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/simple_cc_logo_3-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/square-black-acrylic-lotion-cream-cosmetic_prod-final.jpg"><h3 id="Blog">Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idGo-Home"><a href="/">Go Home</a></p></div><a href="/about">About</a><div><img src="/square-black-acrylic-lotion-cream-cosmetic_prod-final.jpg"><h3 id="About">About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/#about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/square-black-acrylic-lotion-cream-cosmetic_prod-final.jpg"><h3 id="Contact">Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/#contact">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src=""><h3 id="Resume">Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('');}
+body > div.col-1:nth-of-type(2):after {background-image: url('');}</style><h1 id="Many-clouds-many-problems">Many clouds many problems</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category section-category"><p class="A" id="idprojects"><a href="/category/projects">projects</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idI-propose--we-judge-a-cloud-by-it-s--Dep">I propose, we judge a cloud by it's "Deploy Now" button.</p><p class="BR BR BR" id="idhttps---cloud-google-com-blog-products-s">https://cloud.google.com/blog/products/serverless/introducing-cloud-run-button-click-to-deploy-your-git-repos-to-google-cloud<br>
+https://devcenter.heroku.com/articles/heroku-button<br>
+https://azure.microsoft.com/en-us/blog/deploy-to-azure-button-for-azure-websites-2/<br>
+https://www.ibm.com/blogs/cloud-archive/2017/09/share-your-code-with-the-new-deploy-to-bluemix-button/</p><p class="" id="idHow-quickly-can-I-run-a-working-app-from">How quickly can I run a working app from Github on each platform?</p><p class="" id="idHeroku-only-supports-SSL-encryption-if-y">Heroku only supports SSL encryption if you pay extra. I am certain we already decided security should be the default not cost extra. IBM only appears to support Java so that is an automatic fail.</p></div>
+
+</div>
+<script src="/bjcullinan-script.js"></script>
+
+</body></html>

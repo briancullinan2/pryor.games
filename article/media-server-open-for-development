@@ -1,0 +1,62 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/media-server-open-for-development">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article media-server-open-for-development  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('');}
+body > div.col-1:nth-of-type(2):after {background-image: url('');}</style><h1 id="Media-Server-Open-for-Development">Media Server Open for Development</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2009-02-18---media-20server">2009/02/18 - <a href="/category/media%20server">media%20server</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idI-have-picked-a-version-number-based-on-">I have picked a version number based on its current progress.  It is ready for download and development by the community!  I have labeled it 0.4.0 (Alpha) because there is still a ton of work to be done.  Fortunately, there is enough code already made and it is so fully featured it is just a matter of plugging out some code for more features.  It is even cross platform!  That’s right, it should now be able to run on WAMP (Windows, Apache, MySQL, PHP), LAMP (Linux, etc.), and MAMP (Mac, you get the point).</p><h2 id="Current-status-and-Feature-overview-">Current status and Feature overview:</h2><p class="" id="idIt-can-run-without-a-database--and-just-">It can run without a database, and just show a flat file structure (I don’t recommend running this unless it is behind a secure connection).  Or it can run with a database and allow for quick searching!  Aliasing can be used on paths by matching the paths with regular expressions, so even if your operating system doesn’t support links, the users can still see pretty paths! As discussed before, the site contains 3 main parts, “modules” which are responsible for handling different file types.  It currently handles zip archives very nicely, thanks to the getid3() library for PHP.  It also handles ISO images, and can catalog the entire file-system contained in an ISO.  It supports any audio and video type that VLC can handle using an external process.  It can convert any image that ImageMagick can handle (which is a ton!).  Which leads me to the “plug-ins” section; plug-ins allows users to access the files.  Plug-ins provides a link between the files loaded by the modules and the output of the files in the templates.  The “encode” and “convert” plug-ins read files from the database and send them to other external programs, or set header information and allow for downloading.  The “select” and “list” plug-ins are the most important; select allows users to view the files and select files to be downloaded in the future.  The list plug-in allows users to download the list of selected files in many different formats.  List formats can be defined in various ways, either a plug-in could be written to handle a specific type of list, or the template system can be used for outputting a type of list. Finally, it uses Smarty for its template system, so its appearance has limitless potential.  There is default template that provides easy viewing on phones, and an EXT JS template that takes advantage of the EXT JS library to provide a beautiful Windows-like front-end to the users.</p><h2 id="Plans-">Plans:</h2><p class="" id="idHere-I-will-discuss-some-of-the-plans-fo">Here I will discuss some of the plans for features I would like to add to the site.  A “movies” module that can recognize DVD images and full length movies on the file system, I would like it to download information from IMDB.  A “subversion” module that can recognize subversion databases on the file system, and alternatively checked out projects from a remote repository, it will then list all the files apart of the remote or local subversion, it will also be able to recognize diff files and versions.  An archive plug-in will be added to handle outputting any file into multiple different archive formats.  It will also handle outputting single files that come from archives. More templates!  I plan on copying templates from more popular (but less feature-rich) services such as Ampache, Jinzora, kPlaylist, and even WinAmp Remote!  Adding templates is easy using the Smarty template system.</p><h2 id="Download-">Download:</h2><p class="" id="idVisit-the-download-page-for-more-informa">Visit the download page for more information!</p><h2 id="Links-">Links:</h2><p class="" id="idLAMP--WAMP--MAMP-VLC-ImageMagick-Enhance">LAMP, WAMP, MAMP VLC ImageMagick Enhanced cTorrent</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

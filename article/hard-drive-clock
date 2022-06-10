@@ -1,0 +1,66 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/hard-drive-clock">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article hard-drive-clock  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/FLV5ZCIGSLF1PF3.LARGE-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/FLV5ZCIGSLF1PF3.LARGE-final.jpg');}</style><h1 id="Hard-drive-clock">Hard drive clock</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2009-11-05---projects">2009/11/05 - <a href="/category/projects">projects</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><h2 id="The-Idea">The Idea</h2><p class="" id="idI-found-a-tutorial-online-of-how-to-make">I found a tutorial online of how to make a clock out of a hard drive that still spins up but has problems with reads and writes; even a click of death hard drive would work for this project.  Basically it works by cutting a slit in the platter, then flashing lights behind the platter very quickly.  Whatever the color is when the slit passes by is the color that your eyes see.  So you can create very interesting radial designs.</p><h2 id="Some-problems">Some problems</h2><p class="" id="idMy-original-plan-was-to-use-an-MSP-430-t">My original plan was to use an MSP 430 that we had been programming all semester long to control the light blinking.  In theory this would have worked just fine, but then I realized the speed of the chip may not be fast enough to blink the lights at an even increment with the 7200 RPM hard drive platter.  I think I determined the chip only had a mere 16 cycles to switch the colors of the 3 different sets of lights.  The light strip that was to be used requires 9 V on each color.  There are 3 colors; red, blue, and green, just like a computer monitor.  This poses another problem; how to get a 3 V maximum chip to power a 9 V minimum strip of lights?  Would a transistor be fast enough to switch the lights 7200 x 360 times per second?  Would a transistor that has the ability to support 9 V be that fast?</p><h2 id="Abandonment-issues">Abandonment issues</h2><p class="" id="idI-finally-figured-that-I-did-not-current">I finally figured that I did not currently have the electrical engineering expertise to complete this project within the timeframe that I had originally planned.  Maybe with some more EE classes and a greater understanding of the PIC chip used in the original HD Clock design I could eventually return to this project.  But until then it has been tossed with about a dozen torn apart hard drives into the abandoned projects bucket.</p><h2 id="Links">Links</h2><p class="" id="idThe-original-source-for-building-a-hard-">The original source for building a hard drive clock</p><p class="" id="idMSP-430-from-TI">MSP 430 from TI</p><p class="BR BR BR BR" id="idAbandoned-Projects-clock-hard-drive-LED-">Abandoned Projects<br>
+clock<br>
+hard drive<br>
+LED<br>
+MSP 430</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

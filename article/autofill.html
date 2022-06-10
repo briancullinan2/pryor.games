@@ -1,0 +1,72 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/autofill">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article autofill  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('');}
+body > div.col-1:nth-of-type(2):after {background-image: url('');}</style><h1 id="Autofill">Autofill</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2009-11-10---computers">2009/11/10 - <a href="/category/computers">computers</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idI-have-been-working-on-the-College-of-En">I have been working on the College of Engineering, Natural Sciences, and Forestry website for a few weeks throughout the semester.  Recently, we started working on the little details like adding forms that people can fill out and submit.</p><p class="" id="idInterestingly--most-departments-that-acc">Interestingly, most departments that accept these online forms for review have some sort of mindset that they need people to re-enter all of the data that NAU keeps track of.  Why would this be?  I think it is because many people do not understand the powers of LDAP.  Many companies, organizations, and campuses especially keep large internal records of all of their students.  A piece of this information can be viewed online by the public, just like a phone directory.  Makes sense right?</p><h2 id="The-Lookup">The Lookup</h2><p class="" id="idSince-the-school-already-maintains-a-big">Since the school already maintains a big database of information, shouldn’t any department on campus be able to take a username and look up all the information on that user?  It makes sense to me.  Unfortunately, this is not what happens.  Instead, every organization requires that you fill out the entire form, including username, phone number, permanent address, degree major; even though it is all accessible in LDAP.</p><p class="" id="idSo-my-solution-is-this--allow-the-user-t">So my solution is this; allow the user to optionally log in through NAU’s central authentication service (CAS), and fill in all the information automatically.  Then, require the user to review the accuracy of the information and fill out ONLY the additions to the information needed.  Store the changes and submit the form to the appropriate department.</p><p class="" id="idSounds-great-right---Yes--it-is-great--b">Sounds great right?  Yes, it is great, because that is how I design intelligent software...</p><h2 id="Other-Applications">Other Applications</h2><p class="" id="idI-currently-maintain-at-least-6-online-p">I currently maintain at least 6 online profiles (oDesk, ELance, Facebook, LinkedIn, Google, Microsoft) and none of these have the ability to check or sync to any of the other profiles. However, sometimes I will come across an “automatically import your contacts”, where it gives me the option to sign in to Google or upload a comma separated values file of my contacts from Outlook.  This makes me smile; but why not take it a step further?  Most of these services have some sort of remote API for accessing a person’s profile, such as using MSN and clicking “View Profile”.  So why can’t other websites just view the profile you specify and download the information from it?</p><p class="" id="idFilling-out-repetitive-forms-is-annoying">Filling out repetitive forms is annoying...</p><p class="BR BR BR BR BR BR BR BR BR BR" id="idcas-ELance-Facebook-Google-Intelligent-D">cas<br>
+ELance<br>
+Facebook<br>
+Google<br>
+Intelligent Design<br>
+ldap<br>
+LinkedIn<br>
+Microsoft<br>
+NAU<br>
+oDesk<br>
+Web Dev</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

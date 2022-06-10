@@ -1,0 +1,64 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/media-server-amazing-new-features">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article media-server-amazing-new-features  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('');}
+body > div.col-1:nth-of-type(2):after {background-image: url('');}</style><h1 id="Media-Server-Amazing-New-Features">Media Server Amazing New Features</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2010-05-25---media-20server">2010/05/25 - <a href="/category/media%20server">media%20server</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idI-have-been-hard-at-work-the-last-few-da">I have been hard at work the last few days on the Monolithic Media Server.  There is an array of new features that makes programming more functionality in to the media server easier than ever.</p><h2 id="Drupal-and-modular-coding">Drupal and modular coding</h2><p class="BR" id="idDrupal-has-a-lot-of-great-benefits-such-">Drupal has a lot of great benefits such as modular coding.  What this means is ‘modules’ can be loaded in to the system by a click of a button.  All the functionality of this module is dynamically loaded, other modules may depend on the functionality of other modules, but it can be removed at any time and the core system will still remain completely functional.  Essentially, every extension can be view as a module, including themes and different ways of viewing data through a cell phone or Andriod App.  All that supporting functionality is a feature of modular coding.<br>
+I have adapted this paradigm throughout the entire site.  The more work I put in to it, the more stable the site as a whole becomes.  I can make a single correction to the code and suddenly the entire site works as intended.  This has always been my intention for the site.</p><h2 id="Dependencies">Dependencies</h2><p class="" id="idA-great-feature-of-Drupal-and-my-media-s">A great feature of Drupal and my media server is its dependency support.  Modules can now depend on each other and provide code for detecting libraries.  When these libraries are missing, the module is disabled and the site can continue to function properly.  I have created a status page for displaying information about such dependencies.  Modules simply need to implement the status_ function and it can print out information to the status page.</p><h2 id="Settings">Settings</h2><p class="BR" id="idSettings-are-another-excellent-new-featu">Settings are another excellent new feature.  In some cases, the module can act differently, based on the setup you are using, but you don’t necessarily want the end user to be able to decide how a module works.  Therefore, modules can implement the configure_ function for displaying all of a module’s settings.  Setting_ functions are used to validate setting input and set the defaults.<br>
+One nice feature about this is it makes it easy to install.  Since all of the default settings are available, the administrator only has to view and set the settings they care about.</p><h2 id="Easy-module-creation">Easy module creation</h2><p class="" id="idThis-new-API-has-made-module-creation-ex">This new API has made module creation extremely productive and easy.  I have completed a large set of modules already, and there are plans in place for a dozen more.  If you would like to contribute, please get in touch with me as I could really use the help.  I’d like to finish by talked about some of the great new modules in the works!</p><h2 id="Session-management">Session management</h2><p class="" id="idThe-administrator-will-now-be-able-to-ch">The administrator will now be able to choose whether to use the default session manager, or a database session manager.  The database session manager will support the load balancer, as well as provide quick and easy access for site administrators.</p><h2 id="Load-balancer">Load balancer</h2><p class="" id="idThis-module-allows-the-administrator-to-">This module allows the administrator to set up additional mirrored servers for even faster and more efficient media access.  One of my goals for this site is to make it completely scalable.  The load balancer will redirect users to other mirrored setups for faster encoding, more efficient database access, and localized content.  Redirects can take place based on any set of criteria.  The balancer uses a waterfall effect, transferring the user to the last server (most matched criteria).</p><h2 id="Web-Dav">Web Dav</h2><p class="" id="idI-am-in-the-process-of-building-a-WebDav">I am in the process of building a WebDav module that will allow access to all the media files loaded in to the database.  It will use the database as a virtual file system, and will even allow an additional portal to user contributed content, practically replacing the upload module.</p><h2 id="New-tools">New tools</h2><p class="" id="idThere-is-a-vast-array-of-tools-out-there">There is a vast array of tools out there.  It is my goal to provide all the functionality of popular music organization programs such as Tag &amp; Rename within the website interface.  I plan to port over all the functionality of MythTV’s Jamu, TMDB, and TVDB scripts.  All this functionality will be available to administrators.  I plan on providing a Synchronization plug-in that will allow administrators to synchronize multiple media servers together, merging and selecting media files intelligently, and optionally, based on the musicbrainz.org database.</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

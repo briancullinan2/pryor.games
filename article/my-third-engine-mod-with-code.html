@@ -1,0 +1,106 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/my-third-engine-mod-with-code">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article my-third-engine-mod-with-code  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/Screen%20Shot%202020-01-06%20at%2012.44.56%20PM-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/Screen%20Shot%202020-01-06%20at%2012.44.56%20PM-final.jpg');}</style><h1 id="My-third-engine-mod-with-code">My third engine mod with code</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2020-01-08---games">2020/01/08 - <a href="/category/games">games</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idThis-is-my-third-Quake-3-mod--It-is-pret">This is my third Quake 3 mod. It is pretty simple, and probably unsafe to actually implement. Basically, when you touch a button on a map, it opens a browser window to a specific URL.</p><style>
+#id-Screen-20Shot-202020-01-06-20at-2012-44:before {background-image: url("/Screen Shot 2020-01-06 at 12.44.56 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-01-06-20at-2012-44"><img src="/Screen Shot 2020-01-06 at 12.44.56 PM-final.jpg" alt="Working sample"></p><p class="" id="idThis-commit-demonstrate-the-ease-of-addi">This commit demonstrate the ease of adding a command to the server, that can then be sent and executed by clients, either a specific client or all clients.</p><p class="A" id="idGithub---trigger-open-branch"><a href="https://github.com/briancullinan/planet_quake/commit/26374c1aa42cae27e7a78b6c12572785edfe79d0">Github - trigger_open branch</a></p><p class="" id="idBasically--to-make-a-full-round-trip-the">Basically, to make a full round trip there are 2 completely seperate systems. The first system runs on the server, and it loads the game data from a level:</p><pre><code class="language-c">spawn_t        spawns[] = {
+...,
+    {"target_open", SP_target_open},
+    {"target_push", SP_target_push},
+...
+};
+</code></pre><p class="" id="idThe-next-step-is-to-send-the-event-from-">The next step is to send the event from inside the game to the server, which then turns right around and sends it to the respective clients.</p><pre><code class="language-c">char target_execs[10][16384]; // max of 10 commands per level?
+int num_target_execs=0;
+
+void target_use_open( gentity_t *self, gentity_t *other, gentity_t *activator ) {
+        char *nx= target_execs[self-&gt;health];
+        //G_Printf("Opening: %s\n", nx);
+        trap_SendServerCommand(activator-g_entities, va("open \"%s\"", nx));
+}
+
+void SP_target_open( gentity_t *self ) {
+        char *buf;
+        char *nx=target_execs[num_target_execs];
+
+        self-&gt;health=num_target_execs; // TODO set to message instead?
+        G_SpawnString( "message", "print no command", &amp;buf);
+        Com_sprintf(nx, sizeof(target_execs[0]), "%s", buf);
+        self-&gt;use = target_use_open;
+        num_target_execs++;
+}
+</code></pre><p class="CODE" id="idtrap-SendServerCommand-is-really-the-key"><code>trap_SendServerCommand</code> is really the key command here, this allows the game code to essentially jump out of the virtual machine in to the server code. The rest of the server code we leave alone, it will send arbitrary commands to clients, and without the next step our client would report something like "Unrecognized command". Progress!</p><pre><code class="language-c">static void CG_ServerCommand( void ) {
+...
+        if ( !strcmp( cmd, "open" ) ) {
+                char command[16384];
+                Q_strncpyz(command, CG_Argv(1), sizeof(command));
+                CG_Printf( "Opening: %s\n", command );
+                trap_Open( command );
+                return;
+        }
+...
+}
+</code></pre><p class="CODE" id="idThe-final-step-is-to-add-the-trap-Open-c">The final step is to add the trap_Open command to the VM and then add the real <code>system()</code> open command to the client.</p><pre><code class="language-c">qboolean Sys_Open(char *command) {
+#ifndef DEDICATED
+        IN_DeactivateMouse(qfalse);
+#endif
+        system(va("open \"%s\"", command));
+        return qtrue;
+}
+</code></pre><p class="" id="idWe-added-IN-DeactivateMouse-to-the-game-">We added IN_DeactivateMouse to the game to release the mouse when the window focus switches to the browser window. We've now added a game command that opens a web browser when you click a link. This may seem a little silly to support on a native build, but if we combine this concept with the emscripted Javascript build, we quickly realize that our game could open or change web pages with the triggering of an in game button such as a lobby to redirect users to the forums.</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

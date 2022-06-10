@@ -1,0 +1,68 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/making-a-video-game">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article making-a-video-game  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/mfg2-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/mfg2-final.jpg');}</style><h1 id="Making-a-video-game">Making a video game</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2008-03-10---games">2008/03/10 - <a href="/category/games">games</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><h2 id="March-10th-2008">March 10th 2008</h2><p class="" id="idWall-collisions-are-now-working-nicely--">Wall collisions are now working nicely. Only the walls that are in the same quadrant are checked for collisions. But now I am increasingly disappointed with progress on my other world entities like models and landscapes. I am considering implementing some sort of cheap 3d, almost like a 5 sided box made up of images. I can then stretch each image based on how far from the view center it is.</p><h3 id="TODO-">TODO:</h3><p class="" id="idImplement-new-3d-methods-for-rotation-on">Implement new 3d methods for rotation on any axis and cheap topdown models.</p><h3 id="Finished-">Finished:</h3><p class="BR" id="idImplemented-recording-binary-format-seri">Implemented recording binary format serialized files and playing them back in attract mode ( very fast! finally )<br>
+Decided that my projection screen for a 3d effect needed modifcation ( removed it temporarily for dev purposes )</p><style>
+#id-mfg-JPG:before {background-image: url("/mfg-final.jpg");}</style><p class="IMG" id="id-mfg-JPG"><img src="/mfg-final.jpg" alt="My first game"></p><h2 id="March-16th-2008">March 16th 2008</h2><p class="" id="idI-have-finally-implemented-3D-in-my-game">I have finally implemented 3D in my game. The perspective finally looks perfect, and I can finally start creating some 3D models for the entities. My plan for the player entity for example is to find some simple sides that connect like the shoulders and the head, or the waist and the chest, an make them separate tiny images that connect in game. So when the player rotates or walks each little picture with move accordingly. Sound be pretty simple graphics, I can't imagine an entity taking any more then 12 pieces.</p><p class="" id="idMy-main-concern-is-speed--I-am-not-sure-">My main concern is speed. I am not sure if it is the way I am implementing the 3D library, or if it is Slagcore (the language and game engine it is being written in). I was told that matrix manipulation could be built into the native layer, so maybe in the future I won't have to worry about this problem. Before I was calculating 1 point for every 'tile' on screen at a time. Probably about 12x12 so 144 calculations 60 times per second. It seems like a lot but they are very simple calculations, multiplication and addition. With that many calculations it was lagging a bit.</p><p class="" id="idHere-you-can-seen-the-perspective-with-t">Here you can seen the perspective with the debug lines:</p><style>
+#id-mfg2-JPG:before {background-image: url("/mfg2-final.jpg");}</style><p class="IMG" id="id-mfg2-JPG"><img src="/mfg2-final.jpg" alt="mfg2"></p><h3 id="TODO-">TODO:</h3><p class="BR BR" id="idImplement-some-3D-models-Interaction-bet">Implement some 3D models<br>
+Interaction between enemies and other entities with the walls<br>
+Create a 2 dimensional array for dead enemies so we only draw the ones that can be seen</p><h3 id="Finished-">Finished:</h3><p class="" id="idImplementing-3D-in-the-view-controller">Implementing 3D in the view controller</p><p class="" id="idUpdate-2019---Some-other-engineers-in-th">Update 2019 - Some other engineers in the class ahead of me were making a video arcade box, this is probably where a lot of my inspiration came from. It was very similar to this arcade machine below.</p><style>
+#id-The-NEON-MAME-jpg:before {background-image: url("/The_NEON_MAME-final.jpg");}</style><p class="IMG" id="id-The-NEON-MAME-jpg"><img src="/The_NEON_MAME-final.jpg" alt="Arcade box"></p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

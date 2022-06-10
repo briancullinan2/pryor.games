@@ -1,0 +1,74 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/browserfying-the-quake-3-engine">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article browserfying-the-quake-3-engine  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/Screen%20Shot%202020-03-11%20at%205.21.54%20PM-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/Screen%20Shot%202020-03-11%20at%205.21.54%20PM-final.jpg');}</style><h1 id="Browserfying-the-Quake-3-engine">Browserfying the Quake 3 engine</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2020-03-15---games">2020/03/15 - <a href="/category/games">games</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idWorking-on-the-Quake-3-engine-has-been-a">Working on the Quake 3 engine has been amazing. Changes that seem like it should break, just keep on chugging away. I've made some various improvements over the original script.</p><style>
+#id-Screen-20Shot-202020-03-13-20at-201-25-:before {background-image: url("/Screen Shot 2020-03-13 at 1.25.43 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-03-13-20at-201-25-"><img src="/Screen Shot 2020-03-13 at 1.25.43 PM-final.jpg" alt="console output"></p><p class="" id="idThe-graphics-are-all-PNG-JPG-with-50--qu">The graphics are all PNG/JPG with 50% quality. Tuning up the in game quality makes a mid-definition game load fast and look great.</p><style>
+#id-Screen-20Shot-202020-03-11-20at-202-40-:before {background-image: url("/Screen Shot 2020-03-11 at 2.40.13 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-03-11-20at-202-40-"><img src="/Screen Shot 2020-03-11 at 2.40.13 PM-final.jpg" alt="quality graphics"></p><style>
+#id-Screen-20Shot-202020-03-11-20at-202-38-:before {background-image: url("/Screen Shot 2020-03-11 at 2.38.21 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-03-11-20at-202-38-"><img src="/Screen Shot 2020-03-11 at 2.38.21 PM-final.jpg" alt="quality graphics 2"></p><p class="" id="idMore-mod-support--The-original-author-of">More mod support. The original author of QuakeJS released with the capabilities for Vanilla Quake 3, CPMA, and Fortress 2 (a team fortress clone with roles). One of the first people to reach out to me from my activity on Github asked for the Defrag mod. The original conversion script was failing because one of the levels had a weird character in the name.</p><style>
+#id-Screen-20Shot-202020-03-09-20at-2011-11:before {background-image: url("/Screen Shot 2020-03-09 at 11.11.06 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-03-09-20at-2011-11"><img src="/Screen Shot 2020-03-09 at 11.11.06 AM-final.jpg" alt="Defrag mod"></p><p class="" id="idI-ve-added-Open-Arena--Q3-Rally--and-Tea">I've added Open Arena, Q3 Rally, and Team Arena to that list. The conversion script makes a graph of every asset. It converts the assets and repacks them in a way that separates the menu/game and level content, so that they are only downloaded when needed, instead of filling up your phone or browser with a bunch of unused files.</p><style>
+#id-Screenshot-20200307-160232-png:before {background-image: url("/Screenshot_20200307-160232-final.jpg");}</style><p class="IMG" id="id-Screenshot-20200307-160232-png"><img src="/Screenshot_20200307-160232-final.jpg" alt="Q3Rally"></p><style>
+#id-Screenshot-20200306-224514-png:before {background-image: url("/Screenshot_20200306-224514-final.jpg");}</style><p class="IMG" id="id-Screenshot-20200306-224514-png"><img src="/Screenshot_20200306-224514-final.jpg" alt="q3tourney5"></p><p class="" id="idMobile-support-is-handled-with-two-littl">Mobile support is handled with two little onscreen joysticks that can be assigned to look or actions like jump and crouch. Another cool change, editing the mouse position directly because of a touch screen. The problem was, other games are already compiled, and they receive signals for mouse movement such as +/-1 pixel, but the actual position of the mouse is locked to the center of the screen. With touch screen this has to be changed, but I can't change other people's compiled games, so I have to hack the mouse position in memory.</p><style>
+#id-Screenshot-20200309-154504-png:before {background-image: url("/Screenshot_20200309-154504-final.jpg");}</style><p class="IMG" id="id-Screenshot-20200309-154504-png"><img src="/Screenshot_20200309-154504-final.jpg" alt="Touch screen"></p><style>
+#id-Screenshot-20200312-131003-png:before {background-image: url("/Screenshot_20200312-131003-final.jpg");}</style><p class="IMG" id="id-Screenshot-20200312-131003-png"><img src="/Screenshot_20200312-131003-final.jpg" alt="Touch screen defrag"></p><style>
+#id-Screen-20Shot-202020-02-17-20at-201-37-:before {background-image: url("/Screen Shot 2020-02-17 at 1.37.47 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-02-17-20at-201-37-"><img src="/Screen Shot 2020-02-17 at 1.37.47 PM-final.jpg" alt="Disassembly"></p><p class="" id="idNetworking-is-improved--People-reached-o">Networking is improved. People reached out asking for Open RTC, it is a communication protocol built on top of Web Sockets. Since HTTP connections are still required, Quake 3 already has support for SOCKS5, I decided to roll my own Web Socket to SOCKS5 server. Searching for SOCKS server implementations I found one that works on NodeJS, and the first request was to support Web Socket connections. This is one improvement over QuakeJS.</p><style>
+#id-Screen-20Shot-202020-02-11-20at-204-47-:before {background-image: url("/Screen Shot 2020-02-11 at 4.47.50 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-02-11-20at-204-47-"><img src="/Screen Shot 2020-02-11 at 4.47.50 PM-final.jpg" alt="Working networking"></p><p class="" id="idI-have-already-received-some-feedback--m">I have already received some feedback, missing graphics, input lag, freezing on resize, etc. I finally acquired the skill and understanding enough to realize it would be entirely possible to lazy load all graphics over the network. I.e attach the game to low quality assets, and as the player enters the game, slowly update to high quality graphics when the network has settled. WebM and WebP with something like Google AMP would be perfect for this sort of use case. I am enjoying the mode of "breaking it to fix it better".</p><style>
+#id-Screen-20Shot-202020-03-11-20at-205-21-:before {background-image: url("/Screen Shot 2020-03-11 at 5.21.54 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-03-11-20at-205-21-"><img src="/Screen Shot 2020-03-11 at 5.21.54 PM-final.jpg" alt="Lazy load"></p><style>
+#id-Screen-20Shot-202020-03-12-20at-202-42-:before {background-image: url("/Screen Shot 2020-03-12 at 2.42.52 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-03-12-20at-202-42-"><img src="/Screen Shot 2020-03-12 at 2.42.52 PM-final.jpg" alt="Lazy load 2"></p><p class="" id="idI-realized-after-talking-to-some-communi">I realized after talking to some community members that it is time for me to put this toy down for a while and play somewhere else. Usually by the time I get my hands on something, it's already turned to shit. There are a lot of players and communities based around forks on the original game, I don't see much indication that these people want to work together. They actually choose to fork and not work together on purpose. I've found a lot of evidence there are content creators who feel they got ripped off. There are a lot of administrators who retaliate with their ego and reject or ban community members on a whim. There is a lot of separation and angst between communities. Different goals, rejection, trolling, and hate unrelated to trolls, seems to be commonplace in the gaming world.</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

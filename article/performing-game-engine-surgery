@@ -1,0 +1,73 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/performing-game-engine-surgery">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article performing-game-engine-surgery  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/Screen Shot 2019-10-19 at 10.37.11 AM-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/Screen Shot 2019-10-19 at 10.37.11 AM-final.jpg');}</style><h1 id="Performing-game-engine-surgery">Performing game engine surgery</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2019-10-03---games">2019/10/03 - <a href="/category/games">games</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idRewriting-this-">Rewriting this.</p><p class="" id="idI-wanted-to-create-a-mod-that-could-load">I wanted to create a mod that could load 2 maps into quake 3 at the same time, and then switch between them with a portal. Like this game Prey that uses the Crysis engine.</p><style>
+#id-prey-portal1-png:before {background-image: url("/prey_portal1-final.jpg");}</style><p class="IMG" id="id-prey-portal1-png"><img src="/prey_portal1-final.jpg" alt="Quake 3 portal"></p><p class="" id="idThis-portal-doesn-t-wobble-back-and-fort">This portal doesn't wobble back and forth like other quake 3 portals. This is showing a second map loaded in background. There is a small seam around the brown and black pattern on the frame of the door.</p><style>
+#id-Screen-20Shot-202019-12-08-20at-206-17-:before {background-image: url("/Screen Shot 2019-12-08 at 6.17.00 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202019-12-08-20at-206-17-"><img src="/Screen Shot 2019-12-08 at 6.17.00 PM-final.jpg" alt="Github branches"></p><style>
+#id-Screen-20Shot-202019-09-23-20at-2010-07:before {background-image: url("/Screen Shot 2019-09-23 at 10.07.26 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202019-09-23-20at-2010-07"><img src="/Screen Shot 2019-09-23 at 10.07.26 AM-final.jpg" alt="2 positions"></p><p class="" id="idI-knew-I-was-on-to-something-when-I-got-">I knew I was on to something when I got the two maps to load side by side. I burned about a day trying to load two maps using pointer arithmatic, and then I ended up converting the clip map to an array. I added a world variable to the entities, and client side renderer. But a bug in the renderer causes the player model to disappear.</p><style>
+#id-Screen-20Shot-202019-10-19-20at-2010-36:before {background-image: url("/Screen Shot 2019-10-19 at 10.36.46 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202019-10-19-20at-2010-36"><img src="/Screen Shot 2019-10-19 at 10.36.46 AM-final.jpg" alt="Mod screenshot"></p><style>
+#id-Screen-20Shot-202019-10-19-20at-2010-33:before {background-image: url("/Screen Shot 2019-10-19 at 10.33.47 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202019-10-19-20at-2010-33"><img src="/Screen Shot 2019-10-19 at 10.33.47 AM-final.jpg" alt="Mod 2"></p><style>
+#id-Screen-20Shot-202019-10-19-20at-2011-26:before {background-image: url("/Screen Shot 2019-10-19 at 11.26.02 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202019-10-19-20at-2011-26"><img src="/Screen Shot 2019-10-19 at 11.26.02 AM-final.jpg" alt="Mod 3"></p><p class="" id="idThis-is-the-mapping-tool-showing-the-map">This is the mapping tool showing the map split in to two separate pieces with a portal in between.</p><style>
+#id-Screen-20Shot-202019-10-19-20at-2011-12:before {background-image: url("/Screen Shot 2019-10-19 at 11.12.20 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202019-10-19-20at-2011-12"><img src="/Screen Shot 2019-10-19 at 11.12.20 AM-final.jpg" alt="Renderer screenshot"></p><style>
+#id-Screen-20Shot-202019-10-19-20at-2011-11:before {background-image: url("/Screen Shot 2019-10-19 at 11.11.05 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202019-10-19-20at-2011-11"><img src="/Screen Shot 2019-10-19 at 11.11.05 AM-final.jpg" alt="Renderer 2"></p><style>
+#id-Screen-20Shot-202019-10-19-20at-2011-15:before {background-image: url("/Screen Shot 2019-10-19 at 11.15.16 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202019-10-19-20at-2011-15"><img src="/Screen Shot 2019-10-19 at 11.15.16 AM-final.jpg" alt="Renderer 3"></p><style>
+#id-Screen-20Shot-202019-10-19-20at-2011-08:before {background-image: url("/Screen Shot 2019-10-19 at 11.08.20 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202019-10-19-20at-2011-08"><img src="/Screen Shot 2019-10-19 at 11.08.20 AM-final.jpg" alt="Renderer 4"></p><p class="" id="idThe-audio-overlaps--so-I-think-this-is-f">The audio overlaps, so I think this is far from working. It would be cool to turn this kamikaze blast in to a world teleport.</p><style>
+#id-teamarena-2l-jpg:before {background-image: url("/teamarena_2l-final.jpg");}</style><p class="IMG" id="id-teamarena-2l-jpg"><img src="/teamarena_2l-final.jpg" alt="Kamikaze"></p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

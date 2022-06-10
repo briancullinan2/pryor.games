@@ -1,0 +1,68 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/server-side-demos">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article server-side-demos  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/Screencheat_Logo-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/Screencheat_Logo-final.jpg');}</style><h1 id="Server-side-demos">Server side demos</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2020-08-16---games">2020/08/16 - <a href="/category/games">games</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idQuake-3-demos-are-a-cool-kind-of-file-th">Quake 3 demos are a cool kind of file that records game events to be re-rendered and replayed automatically. It reminds me of this piano my aunt had growing up that had scrolls and used compressed air and could automatically play itself. In a game development class in college, we learned how “Arcade mode” shows game play to attract players over to the game. This is my intention for demos with Quake 3.</p><style>
+#id-Screen-20Shot-202020-08-14-20at-202-21-:before {background-image: url("/Screen Shot 2020-08-14 at 2.21.47 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-08-14-20at-202-21-"><img src="/Screen Shot 2020-08-14 at 2.21.47 AM-final.jpg" alt="dual screen"></p><p class="" id="idQuake-3-plays-demos-by-recording-every-n">Quake 3 plays demos by recording every network message the server sends. Then it plays back the network message for replaying the demo. The network messages update the players state, and the engine renders the scene as if you were currently in a match playing the game.  It’s kind of like an adjustable movie in the sense that the engine is re-rendering the actual game state, as opposed to taking a picture and making a demo movie. Taking a movie capture of the game is also an option with the Quake 3 engine, but not discussed here.</p><p class="A A" id="idDemos-are-recorded-client-side-by-defaul">Demos are recorded client side by default. But recently, I heard about this idea called “server side demos.” I’ve never seen this in action or being used, but there is a lot of work on it documented <a href="https://openarena.fandom.com/wiki/Manual/Demos#Server-side_demos">here</a>. When I went to implement, I found <a href="http://openarena.ws/board/index.php?topic=4437.0">this incredible thread</a>. The guy explains step by step which and how he implemented server side demos. Basically, there have been many attempts at getting this to work. Each method has some benefits, so I took all 3 types of demos and combined them into one. Let’s review.</p><h3 id="1---Fully-server-side">1 - Fully server side</h3><p class="" id="idI-first-heard-about-this-from-the-guys-o">I first heard about this from the guys over at Tremulous. They had a setup where players can join the server, then watch a recorded demo play out as if it was a live match. You can even spectate, fly around, and follow the players in the match. This is neat because it creates a shared experience. Every player connected gets to see the same thing happening in the game. They can even vote to play a specific demo recording.</p><h3 id="2---Server-side-client-recording">2 - Server side client recording</h3><p class="" id="idThis-seems-so-obvious--that-s-part-of-wh">This seems so obvious, that’s part of what makes it cool. Since a client can record network events and make a demo, this patch created by “TheDoctor” records every single client to a separate file from the server's end. So instead of recording incoming network events from the server, the server goes through each client and records the outgoing events to separate client dm_68 files. This is cool because it might allow me to transfer a demo to a client, or replay a specific sequence as the action continues for the other players.</p><h3 id="3---Multiview">3 - Multiview</h3><p class="" id="idThis-is-probably-the-most-bizarre-kind-o">This is probably the most bizarre kind of demo I’ve heard of. Cyrax from Q3e moved some of the demo code from Excessive+ and CPMA into an engine level solution that is not mod specific. This is a truly amazing piece of code. A few files edited server side, and I can join the multiview protocol and receive a copy of every client's network events as if I was playing as every client. It packs all the network events from every client connected to the server into the data that I receive. I can switch views and see the game as if it is being played from their own computer screen. I love this implementation because it feels like it is really close to supporting instant replays, body cams on teammates, split screen, showing an overhead view of the map. Very cool game dynamics possibilities, ALL engine side!</p><style>
+#id-quake3splitscreen-jpg:before {background-image: url("/quake3splitscreen-final.jpg");}</style><p class="IMG" id="id-quake3splitscreen-jpg"><img src="/quake3splitscreen-final.jpg" alt="split screen 2"></p><p class="" id="idWhat-does-engine-side-mean--It-means-I-d">What does engine-side mean? It means I didn’t have to edit the game code, which is already compiled, to get it to work. This is a good thing because some “Game Codes” come from other people. I don’t have control over other people’s code, but they can still use these features if they load up their game using my engine. All of these demo modifications are engine-side, so they work on many different games and mods that play on this engine.</p><p class="" id="idMy-next-goal-is-to-fully-support-split-s">My next goal is to fully support split screen. Using the engine to spy on other players. Hopefully, I will be able to add instant replays and switch back and forth from playing the game to watching the game instantly. I also thought it would be cool to load another mod and when you look in the mirror it cartoonifies your character.</p><style>
+#id-Screen-20Shot-202020-08-12-20at-206-00-:before {background-image: url("/Screen Shot 2020-08-12 at 6.00.29 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-08-12-20at-206-00-"><img src="/Screen Shot 2020-08-12 at 6.00.29 PM-final.jpg" alt="split screen"></p><style>
+#id-Screen-20Shot-202020-08-08-20at-2011-04:before {background-image: url("/Screen Shot 2020-08-08 at 11.04.47 AM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-08-08-20at-2011-04"><img src="/Screen Shot 2020-08-08 at 11.04.47 AM-final.jpg" alt="mirror effects"></p><p class="" id="idMy-original-goal-was-turning-quake-3-int">My original goal was turning quake 3 into an open world battle royale. And eventually, I’d like to even combine different game plays, like one team could be capturing the flag, and one team could be in a deathmatch and they can all interact and fight for their goals. Playing demos also works now in the browser build.</p><h2 id="Earlier">Earlier</h2><p class="CODE CODE" id="idI-found-a-few-bugs-in-my-lazy-loading-mo">I found a few bugs in my lazy loading modification. It came down to another piece of the file-system and not downloading/reactivating the shaders after the level loaded. <code>fs_game</code> was getting reset, since it matches the default <code>fs_basegame</code>. Another reason this entire engine needs a good suite of unit tests.</p><p class="" id="idI-am-focused-on-adding-some-file-format-">I am focused on adding some file format support. Currently a 30 second movie uses about 30 MBs for in-game videos, but if I re-encode it to .webm/VP9, the same video is only about 1MB in size. There may also be some quality and size improvements using webp images.</p><style>
+#id-Screen-20Shot-202020-08-12-20at-206-26-:before {background-image: url("/Screen Shot 2020-08-12 at 6.26.34 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-08-12-20at-206-26-"><img src="/Screen Shot 2020-08-12 at 6.26.34 PM-final.jpg" alt="playing videos"></p><p class="" id="idNow--by-default--the-player-is-dropped-i">Now, by default, the player is dropped into a running game. The client is connected to a local dedicated server running in a web-worker. I was able to reduce the load on the main thread by about 15%, leaving more CPU for frame-rate, which I can now get up to about 150 FPS on a small map, and around 90 FPS on a larger map like q3dm16.</p><p class="CODE" id="idThe-local-server-also-shows-up-in-the-li">The local server also shows up in the list of Local servers, so the user can connect back to it. The local server game is also “broken out” of any firewall or LAN network using the SOCKS proxy. Anyone can connect back to your local dedicated server. This has come with a number of single player issues. Using a dedicated server for local games is completely different from the original design, but I saw that most of the communication happens over the Net interface. Because local games use a loopback indication over the net interface, I was able to reconnect as if the built in server was being used on the same thread. I connected the loopback interface to postMessage() in the worker. Every time a loopback packet is sent, it is transmitted over the web-worker postMessage() interface, and then read into the loopback queue in the dedicated server worker. Server commands are handled using the existing command interface, but instead of requiring <code>\rcon</code> at the beginning of the command, it processes all the server commands as if it was connected locally.</p><style>
+#id-Screen-20Shot-202020-07-09-20at-206-06-:before {background-image: url("/Screen Shot 2020-07-09 at 6.06.16 PM-final.jpg");}</style><p class="IMG" id="id-Screen-20Shot-202020-07-09-20at-206-06-"><img src="/Screen Shot 2020-07-09 at 6.06.16 PM-final.jpg" alt="local servers"></p><h2 id="07-25-2020">07/25/2020</h2><p class="" id="idDoing-a-little-extra-cleanup--I-ve-turne">Doing a little extra cleanup. I’ve turned the local servers list into a cvar by using cl_master1 through 24 (as opposed to sv_master1 through 24). I added a cvar for some extra rcon passwords. I also fixed a bug where the map_restart command would cause a crash that turned out to be related to the bot AI not restarting properly because the single player is disconnected from the dedicated local server. The script actually adds the bots at the start of the match, and the entire game VM is reloaded in memory.</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>

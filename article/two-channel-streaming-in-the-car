@@ -1,0 +1,62 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/14657360_10101590924870878_61516874436580927_n.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Cullinan's Blog">
+<link rel="canonical" href="https://blog.briancullinan.com/article/two-channel-streaming-in-the-car">
+<title>Brian Cullinan's Blog</title>
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+body > div.col-1:nth-of-type(2):after {background-image: url('/14352093_10101553456043708_40921959992780880_o-final.jpg');}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&amp;display=swap"><link rel="stylesheet" href="/bjcullinan-style.css">
+</head>
+<body class="article two-channel-streaming-in-the-car  ">
+<div class="row-0  col-1">
+
+<div class="cell-0  section-menu">
+
+<div class="row-0  col-1">
+
+<div class="cell-0  section-logo">
+<header><a href="/"><img src="/14657360_10101590924870878_61516874436580927_n-final.jpg"></a></header>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-link val-name val-image val-caption section-menu-data">
+<nav><a href="/">Blog</a><div><img src="/undraw_blog_anyj-final.jpg"><h3>Blog</h3><p class="" id="idSee-stories-and-lots-of-pictures-from-my">See stories and lots of pictures from my journey.</p><p class="A" id="idBlog"><a href="/">Blog</a></p></div><a href="/about">About</a><div><img src="/undraw_instant_support_elxh-final.jpg"><h3>About</h3><p class="" id="idLearn-about-how-I-started-with-computers">Learn about how I started with computers.</p><p class="A" id="idLearn-more"><a href="/about">Learn more</a></p></div><a href="/connect">Connect</a><div><img src="/undraw_agreement_aajr-final.jpg"><h3>Contact</h3><p class="" id="idWe-are-honored-to-be-a-part-of-your-pamp">We are honored to be a part of your pampering. We hope our products bring healing and wellness into your life.</p><p class="A" id="idContact-us"><a href="/connect">Contact us</a></p></div><a href="https://briancullinan.com/">Resume</a><div><img src="/undraw_Job_hunt_tinb-final.jpg"><h3>Resume</h3><p class="" id="idLearn-more-about-my-work-history-in-a-mo">Learn more about my work history in a more standardized format.</p><p class="A" id="idResume"><a href="https://briancullinan.com/">Resume</a></p></div><a href="https://quake.games">Play</a><div><img src="/undraw_gaming_6oy3-final.jpg"><h3>Play</h3><p class="" id="idPlay-a-game-">Play a game.</p><p class="A" id="idPlay"><a href="https://quake.games">Play</a></p></div></nav>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="row-1  col-1">
+
+<div class="cell-0 val-banner val-title section-title section-banner">
+<style>
+body > div.col-1:nth-of-type(2):before {background-image: url('');}
+body > div.col-1:nth-of-type(2):after {background-image: url('');}</style><h1 id="Two-channel-streaming-in-the-car">Two channel streaming in the car</h1></div>
+
+</div>
+
+<div class="row-2  col-1">
+
+<div class="cell-0 val-category val-date section-category"><p class="A" id="id2008-12-19---projects">2008/12/19 - <a href="/category/projects">projects</a></p></div>
+
+</div>
+
+<div class="row-3  col-1">
+
+<div class="cell-0 val-content "><p class="" id="idSome-of-us-can-t-afford-an-iPhone-and-AT">Some of us can’t afford an iPhone and AT&amp;T’s overpriced and unreliable service plan.  I have an alternative.  Most networks offer some kind of internet plan, Verizon for example is only an extra $30 per month, no matter what plan type you have.  Alltel also offers an all in one package.  Here I will discuss an alternative to using Pandora on an iPhone.</p><h2 id="The-Phone">The Phone</h2><p class="" id="idI-am-using-a-Treo-700WX-for-this-example">I am using a Treo 700WX for this example.  One of its many features is 2-channel audio output.  Stereo jacks are separated into different segments.  On most stereo jacks there is a tip, a middle segment, and a ground.  On the standard stereo jack the left channel is the tip, and then right channel is the middle segment.  On cell phone jacks, it is usually a mini-stereo jack where the tip is left channel, and the middle segment is microphone.</p><p class="" id="idThe-Treo-however-supports-2-channel-audi">The Treo however supports 2 channel audio; so the jack has 4 segments.  The tip is then the right channel, the first segment after that is the left channel, then the microphone, and then ground.  So if a 3 segment jack that is not made for the Treo is used, the microphone still uses the right segment.</p><p class="" id="idWith-the-Treo-s-unlimited-data-plan-I-ca">With the Treo’s unlimited data plan I can stream music from my server using TCPMP.  But I still need a way to connect the phone to the car stereo.  This task would have been greatly simplified if I had a stereo with an auxiliary input.</p><h2 id="The-Stereo">The Stereo</h2><p class="" id="idThe-stereo-is-stock-equipment---It-has-a">The stereo is stock equipment.  It has a CD player and a tape deck.  Fortunately I had a stereo jack to tape converter lying around.  The first modification I made was I removed the mysterious locking device inside the tape converter.  There are a series of gears that if turned at a different speed will lock in to place.  This was preventing the stereo from using the tape converter properly, and after I removed it, it worked perfectly.</p><p class="" id="idI-then-unsoldered-the-3-mounting-points-">I then unsoldered the 3 mounting points for the standard stereo jack, and soldered on the wire from the ear-buds for my phone.  The hard part was actually getting the wire from the phone jack attached to the solder; the wire is very small and is encased is a metallic-looking casing that makes it difficult to tell if it the wire in the middle is actually making contact.  I recommend attaching it at an angle from straight above the devices to increase the likelihood of it making contact.  Also, using a multi-meter is always a good idea.</p><h2 id="The-Stream">The Stream</h2><p class="" id="idVideo-over-LAN-Media-Player--VLC--is-ver">Video over LAN Media Player (VLC) is very useful when setting up a stream-able connection.  It can trans-code any type of audio and output any bit-rate in any format.  So, I used an mmsh-asfh stream, which is generally compatible with windows media player.  I can load a playlist file and add the --loop option to make the playlist keep repeating.  There are many other options, for example making the playlist play in random order.  I can then connect to that on my phone using TCPMP.</p><p class="" id="idFinally-I-have-2-channel-stereo-audio-st">Finally I have 2-channel stereo audio streaming wherever I go in my car.</p></div>
+
+</div>
+<script async="" src="/bjcullinan-script.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177219283-2"></script>
+
+</body></html>
